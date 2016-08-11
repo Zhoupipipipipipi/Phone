@@ -5,7 +5,7 @@ $(function() {
 	var duration = $('.timebar .duration'); //总时间
 	var progress = $('.timebar .progress-bar'); //进度条
 	var volumebar = $('.volumeBar .volumewrap').find('.progress-bar');
-	playVideo[0].volume = 0.4; //初始化音量
+	playVideo[0].volume = 0.6; //初始化音量
 	playPause.on('click', function() {
 		playControl();
 	});
@@ -47,40 +47,41 @@ $(function() {
 			};
 		event.preventDefault();
 	});
-	
-	
+
+    playVideo[0].play();
+    $('.playTip').removeClass('glyphicon-play').addClass('glyphicon-pause').fadeOut();
 	//全屏
-	$('.fullScreen').on('click', function() {
-		if ($(this).hasClass('cancleScreen')) {
-			if (document.exitFullscreen) {
-				document.exitFullscreen();
-			} else if (document.mozExitFullScreen) {
-				document.mozExitFullScreen();
-			} else if (document.webkitExitFullscreen) {
-				document.webkitExitFullscreen();
-			}
-			$(this).removeClass('cancleScreen');
-			$('#willesPlay .playControll').css({
-				'bottom': -48
-			}).removeClass('fullControll');
-		} else {
-			if (playVideo[0].requestFullscreen) {
-				playVideo[0].requestFullscreen();
-			} else if (playVideo[0].mozRequestFullScreen) {
-				playVideo[0].mozRequestFullScreen();
-			} else if (playVideo[0].webkitRequestFullscreen) {
-				playVideo[0].webkitRequestFullscreen();
-			} else if (playVideo[0].msRequestFullscreen) {
-				playVideo[0].msRequestFullscreen();
-			}
-			$(this).addClass('cancleScreen');
-			$('#willesPlay .playControll').css({
-				'left': 0,
-				'bottom': 0
-			}).addClass('fullControll');
-		}
-		return false;
-	});
+	//$('.fullScreen').on('click', function() {
+	//	if ($(this).hasClass('cancleScreen')) {
+	//		if (document.exitFullscreen) {
+	//			document.exitFullscreen();
+	//		} else if (document.mozExitFullScreen) {
+	//			document.mozExitFullScreen();
+	//		} else if (document.webkitExitFullscreen) {
+	//			document.webkitExitFullscreen();
+	//		}
+	//		$(this).removeClass('cancleScreen');
+	//		$('#willesPlay .playControll').css({
+	//			'bottom': -48
+	//		}).removeClass('fullControll');
+	//	} else {
+	//		if (playVideo[0].requestFullscreen) {
+	//			playVideo[0].requestFullscreen();
+	//		} else if (playVideo[0].mozRequestFullScreen) {
+	//			playVideo[0].mozRequestFullScreen();
+	//		} else if (playVideo[0].webkitRequestFullscreen) {
+	//			playVideo[0].webkitRequestFullscreen();
+	//		} else if (playVideo[0].msRequestFullscreen) {
+	//			playVideo[0].msRequestFullscreen();
+	//		}
+	//		$(this).addClass('cancleScreen');
+	//		$('#willesPlay .playControll').css({
+	//			'left': 0,
+	//			'bottom': 0
+	//		}).addClass('fullControll');
+	//	}
+	//	return false;
+	//});
 	//音量
 	$('.volume').on('click', function(e) {
 		e = e || window.event;
@@ -189,7 +190,7 @@ $(function() {
 			}, function() {
 				setTimeout(function() {
 					$('.playControll').stop().animate({
-						'height': 0,
+						'height': 0
 					}, 500);
 				}, 2000)
 			});
@@ -197,14 +198,13 @@ $(function() {
 			$(this).addClass('on');
 			$('.overlay').remove();
 			$('.playControll').css({
-				'bottom': 0,
+				'bottom': 0
 			});
 		}
 		e.stopPropagation();
 		e.preventDefault();
 	});
 });
-
 //秒转时间
 function formatSeconds(value) {
 	value = parseInt(value);
