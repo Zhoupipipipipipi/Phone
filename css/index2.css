@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html {
+    font-size : 20px;
+}
+.all{
+    height: 23.5rem;
+}
+@media only screen and (min-width: 320px){
+    html {
+        font-size: 20px !important;
+    }
+    .all{
+        height: 24rem;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 360px){
+    html {
+        font-size: 20px !important;
+    }
+    .all{
+        height: 32rem;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+    .all{
+        height: 28rem;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+    .all{
+        height: 30rem;
+    }
+}
+@media only screen and (width: 480px){
+    html {
+        font-size: 26.75px !important;
+    }
+    .all{
+        height: 30rem;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+    .all{
+        height: 28rem;
+    }
+}
+@media only screen and (min-width: 540px){
+    html {
+        font-size: 30px !important;
+    }
+    .all{
+        height: 32rem;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+    .all{
+        height: 32rem;
+    }
+}
+@media only screen and (min-width: 640px){
+    html {
+        font-size: 35px !important;
+    }
+    .all{
+        height: 27.5rem;
+    }
+}
+@media only screen and (width: 640px) and (height: 1136px){
+    html {
+        font-size: 35px !important;
+    }
+    .all{
+        height: 40rem;
+    }
+}
+@media only screen and (min-width: 720px){
+    html {
+        font-size: 40px !important;
+    }
+    .all{
+        height: 32rem;
+    }
+}
+header,footer{
+    height: 8%;
+    width: 100%;
+    background-color: #2b3131;
+    color: #ffffff;
+}
+.headerLeft{
+    display: inline-block;
+    width: 8.25rem;
+}
+.headerLeft a {
+    display: inline-block;
+    width: 1.7rem;
+    height: 0.85rem;
+    margin: 0.75rem 0.5rem;
+    padding: 0 0.85rem 0 0;
+    border-right: solid 1px #000000;
+}
+.headerLeft a img{
+    display: inline-block;
+    width: 100%;
+}
+.headerLeft span{
+    display: inline-block;
+    font-size: 0.8rem;
+    float: right;
+    line-height: 2.4rem;
+}
+.headerRight{
+    display: inline-block;
+    float: right;
+    margin-top: 0.7rem;
+    height: 1rem;
+    width: 0.2rem;
+    margin-right: 1.35rem;
+}
+.headerRight img{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    height: 84%;
+    background-color: #000000;
+}
+.contentPic{
+    height: 80%;
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+.contentTitle{
+    height: 20%;
+    color: #ffffff;
+}
+.contentTitle p{
+    font-size: 0.6rem;
+    line-height: 1rem;
+    font-family: 微软雅黑;
+    margin-left: 0.6rem;
+}
+.footerLeft{
+    display: inline-block;
+    height: 100%;
+}
+.footerLeft ul{
+    display: inline-block;
+    list-style: none;
+    height: inherit;
+}
+.footerLeft ul li{
+    margin-top: 0.75rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+.footerPic{
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+}
+.footerPic img{
+    width: 100%;
+}
+.footerLeft ul li span{
+    font-size: 0.8rem;
+    margin-left: 0.6rem;
+    float: right;
+    line-height: 0.8rem;
+}
+.footerRight{
+    display: inline-block;
+    float: right;
+    border-left: solid 1px #000000;
+    height: 1.1rem;
+    padding-left: 0.6rem;
+    margin-top: 0.75rem;
+}
+.footerRight li{
+    display: inline-block;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.6rem;
+}
+.footerRight li img{
+    width: 100%;
+}
+#willesPlay .playContent .playTip {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    top: 28%;
+    left: 43%;
+    margin-left: 0;
+    margin-top: 0;
+    background: rgba(255,255,255,0.5);
+    font-size: 1rem;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+#willesPlay .otherControl span:nth-child(1) {
+    font-size: 28px;
+    color: #919597;
+}
+#willesPlay .playControll {
+    position: absolute;
+    z-index: 2147483650;
+    width: 100%;
+    height: 2rem;
+    bottom: -2rem;
+    background: url(../images/playheader.jpg) repeat-x;
+    border-radius: 0px 0px 3px 3px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#willesPlay {
+    margin: 30% auto 0 auto;
+    box-shadow: 0px 0px 15px #333333;
+    position: relative;
+}
+#willesPlay .playControll {
+    position: absolute;
+    z-index: 2147483650;
+    width: 100%;
+    height: 2rem;
+    bottom: -2rem;
+    background: url(../images/playheader.jpg) repeat-x;
+    border-radius: 0px 0px 3px 3px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    display: none;
+}

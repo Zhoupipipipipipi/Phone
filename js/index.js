@@ -3,7 +3,6 @@
  */
 var item = document.getElementById('FifthContent').getElementsByClassName('FifthItem');
 for(var i = 0;i<item.length;i++){
-    item[i].style.background='url(images/'+(i+1)+'.jpg)';
     if(i%2!=0){
         item[i].style.float='left';
     }
@@ -11,9 +10,15 @@ for(var i = 0;i<item.length;i++){
         item[i].style.float='right';
     }
 }
+
 var li =  document.getElementById('FooterItem').getElementsByTagName('li');
 for(var i = 0;i<li.length;i++){
     li[i].addEventListener('touchstart',touchStart,false);
+}
+
+var love = document.getElementById('SixContent').getElementsByTagName('small');
+for (var i = 0; i < love.length; i++) {
+    love[i].addEventListener('touchstart',lover,false);
 }
 var headerLeft = document.getElementById('headerLeft');
 headerLeft.addEventListener('touchstart',touchHead,false);
@@ -45,4 +50,15 @@ function touchHead(){
     else{
         show.style.display = 'block';
     }
+}
+
+function lover(){
+    var img = document.getElementById('collect');
+    img.style.display="block";
+    setTimeout("lose()",1000);
+}
+
+function lose(){
+    var img = document.getElementById('collect');
+    img.style.display="none";
 }
