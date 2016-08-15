@@ -1,4 +1,7 @@
-# Phone
+# Phone  
+[1]:http://s.codepen.io/zhoupipipipipipi/debug/oLmLEG  
+[2]:http://s.codepen.io/zhoupipipipipipi/debug/QEzrYq  
+[3]:http://s.codepen.io/zhoupipipipipipi/debug/zBrBqw  
 ##手机端字体响应式 使用rem或em,不要用px  
 ###css实现响应式 
 `@media only screen and (min-width: 401px){
