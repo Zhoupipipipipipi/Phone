@@ -17,6 +17,11 @@
     <div class="bigPic" id="bigPic" ontouchstart = "hidePic(this)">
         <img src="images/1.jpg">
     </div>
+    <div class="comment">
+        <input type="text">
+        <img src="image/smile.png">
+        <button type="button">发送</button>
+    </div>
     <header>
         <div class="headerLeft">
             <div class="icon">
@@ -57,7 +62,7 @@
                             <span><img src="image/weilove.png"></span>
                             <b>赞</b>
                         </li>
-                        <li>
+                        <li ontouchstart = "comment(this)">
                             <span><img src="image/weiping.png"></span>
                             <b>评价</b>
                         </li>
@@ -106,9 +111,6 @@
                         <span><img src="image/heartBlie.png"></span>
                         <span>XX</span>
                     </div>
-                </div>
-                <div class="comment">
-                    <input type="text">
                 </div>
             </div>
         </div>
