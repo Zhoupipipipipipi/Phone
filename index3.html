@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index3.css">
+    <script src = "js/TouchSlide.1.1.js"></script>
+</head>
+<body>
+    <div id="container" class="container" class="picScroll">
+        <div class="selected-tab clearfix bd">
+            <ul>
+                <li><img _src='images/1.jpg' ></li>
+            </ul>
+            <ul>
+                <li><img _src='images/3.jpg' ></li>
+            </ul>
+            <ul>
+                <li><img _src='images/6.jpg' ></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentTitle">
+        <p>新品发布</p>
+        <p>摩登秋季春款搭配</p>
+        <p>上衣158，包裙195</p>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <ul>
+                <li id="love">
+                    <div class="footerPic">
+                        <img src="image/loveWhite.png" id="lovePic" alt="0">
+                    </div>
+                    <span id="zan">赞</span>
+                </li>
+                <li>
+                    <div class="footerPic">
+                        <img src="image/commentWhite.png">
+                    </div>
+                    <span>评论</span>
+                </li>
+            </ul>
+        </div>
+        <ul class="footerRight">
+            <li><img src="image/loveWhite.png"></li>
+            <li><img src="image/commentWhite.png"></li>
+        </ul>
+    </footer>
+    <script type="text/javascript">
+        TouchSlide({
+            slideCell:"#container",
+            switchLoad:"_src" //切换加载，真实图片路径为"_src"
+        });
+    </script>
+</body>
+</html>

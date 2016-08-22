@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html {
+    font-size : 20px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+.all{
+    height: 100%;
+    background-color: #000;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important;
+    }
+}
+.container{
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    top: 1rem;
+}
+.container img{
+    width: 100%;
+    height: 15rem;
+}
+.contentTitle{
+    height: 20%;
+    color: #ffffff;
+    position: absolute;
+    bottom: 5%;
+}
+.contentTitle p{
+    font-size: 0.6rem;
+    line-height: 1rem;
+    font-family: 微软雅黑;
+    margin-left: 0.6rem;
+}
+footer{
+    height: 2.4rem;
+    width: 100%;
+    background-color: #2b3131;
+    color: #ffffff;
+    position: absolute;
+    bottom: -1rem;
+}
+.footerLeft{
+    display: inline-block;
+    height: 100%;
+}
+.footerLeft ul{
+    display: inline-block;
+    list-style: none;
+    height: inherit;
+}
+.footerLeft ul li{
+    margin-top: 0.75rem;
+    display: inline-block;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.footerPic{
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+}
+.footerPic img{
+    width: 100%;
+}
+.footerLeft ul li span{
+    font-size: 0.8rem;
+    margin-left: 0.6rem;
+    float: right;
+    line-height: 0.8rem;
+}
+.footerRight{
+    display: inline-block;
+    float: right;
+    border-left: solid 1px #000000;
+    height: 1.1rem;
+    padding-left: 0.6rem;
+    margin-top: 0.75rem;
+}
+.footerRight li{
+    display: inline-block;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.6rem;
+}
+.footerRight li img{
+    width: 100%;
+}

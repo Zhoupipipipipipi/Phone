@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', '微软雅黑', Arial, Lucida Grande, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+html {
+}
+body{
+    position: relative;
+    font-size : 40px;
+}
+header{
+    height: 2.4rem;
+    width: 100%;
+    color: #ffffff;
+    position: fixed;
+    overflow: hidden;
+    background-color: #393a3f;
+    z-index: 1;
+}
+.headerLeft{
+    display: inline-block;
+    width: 5.6rem;
+}
+.icon{
+    display: inline-block;
+    width: 0.825rem;
+    height: 0.85rem;
+    margin: 0.75rem 0.5rem 0;
+    padding: 0 0.85rem 0 0;
+    border-right: solid 0.05rem #000000;
+}
+.headerLeft a {
+
+}
+.headerLeft a img{
+    float: left;
+    width: 0.825rem;
+    height: 0.8rem;
+}
+.headerLeft span{
+    float: right;
+    display: inline-block;
+    font-size: 0.85rem;
+    line-height: 2.4rem;
+}
+.headerRight{
+    display: inline-block;
+    float: right;
+    margin-top: 0.7rem;
+    height: 0.9rem;
+    width: 1.125rem;
+    margin-right: 0.85rem;
+}
+.headerRight img{
+    float: left;
+    height: 0.9rem;
+    width: 1.125rem;
+}
+.container{
+    width: 100%;
+    height: 13.4rem;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+}
+.headPic{
+    position: absolute;
+    height: 4.2rem;
+    top: 10.8rem;
+    right: 0.6rem;
+}
+.headPic span{
+    display: inline-block;
+    line-height: 4.2rem;
+    color: #ffffff;
+    float: left;
+    font-size: 0.75rem;
+    margin-right: 0.6rem;
+}
+.headImg{
+    display: inline-block;
+    float: right;
+    width: 4.15rem;
+    height: 4.15rem;
+    border: solid 0.05rem #757575;
+    background-color: #ffffff;
+}
+.whiteBox{
+    width: 160rem;
+    width: 4rem;
+    height: 4rem;
+    border: 0.075rem solid #ffffff;
+    overflow: hidden;
+}
+.whiteBox img{
+    width: 160rem;
+    width: 4rem;
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin-top: 1.75rem;
+}
+.item{
+    padding-top: 0.6rem;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: solid 0.025rem #cccccc;
+    margin-bottom: 0.2rem;
+}
+.item-pic{
+    margin-left: 0.6rem;
+    display: inline-block;
+    width: 2.1rem;
+    height: 2.1rem;
+    float: left;
+    margin-right: 0.6rem;
+}
+.item-pic img{
+    width: 2.1rem;
+    height: 2.1rem;
+}
+.item-content{
+    width: 12rem;
+    margin-right: 0.6rem;
+    display: inline-block;
+}
+.item-content h4{
+    color: #586c96;
+    font-size: 0.7rem;
+    font-weight: normal;
+    margin-bottom: 0.3rem;
+}
+.item-content p{
+    margin-bottom: 0.4rem;
+    font-size: 0.725rem;
+}
+.item-content p img{
+    width: 45%;
+}
+.item-last{
+    overflow: hidden;
+    height: 2rem;
+}
+.item-last small{
+    font-size: 0.6rem;
+    color: #aaaaaa;
+    float: left;
+    line-height: 2rem;
+}
+.item-last ul{
+    width: 8rem;
+    background: #353b3d;
+    height: 2rem;
+    list-style: none;
+    overflow: hidden;
+    margin-left: 0.55rem;
+    display: none;
+}
+.item-content ul li{
+    display: inline-block;
+    float: left;
+    width: 3.95rem;
+    height: 1.35rem;
+    overflow: hidden;
+    margin-top: 0.3rem;
+}
+.item-content ul li:first-child{
+    border-right: 0.05rem solid #000;
+}
+.item-content ul li span{
+    float: left;
+    width: 0.9rem;
+    height: 0.8rem;
+    margin-left: 1rem;
+}
+.item-content ul li span img{
+    float: left;
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 0.3rem;
+}
+.item-content ul li b{
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    float: left;
+    font-size: 0.625rem;
+    color: #ffffff;
+    font-weight: normal;
+}
+.other{
+    display: inline-block;
+    float: right;
+    width: 1.1rem;
+    height: 0.775rem;
+}
+.other img{
+    margin-top: 0.7rem;
+    float: left;
+    width: 1.1rem;
+    height: 0.775rem;
+}
+.bigPic{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #000000;
+    vertical-align: middle;
+    display: none;
+    align-items: center;              /*flex垂直居中*/
+}
+.bigPic img{
+    width: 100%;
+}
+.zan{
+    width: 100%;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 0.45rem solid transparent;
+    border-right: 0.45rem solid transparent;
+    border-bottom: 0.7rem solid #eeeeee;
+    margin-left: 0.2rem;
+}
+.zanContent{
+    width: 100%;
+    height: 1.3rem;
+    background-color: #eeeeee;
+    margin-top: -0.3rem;
+    overflow: hidden;
+}
+.zanContent span{
+    display: inline-block;
+    font-size: 0.7rem;
+    color: #576b95;
+    float: left;
+    line-height: 1.3rem;
+}
+.zanContent span:after{
+    content: ',';
+}
+.zan span img{
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.zanContent span:first-child{
+    margin-left: 0.4rem;
+    margin-right: 0.2rem;
+}
+.zanContent span:first-child:after,
+.zanContent span:last-child:after{
+    content: '';
+}
