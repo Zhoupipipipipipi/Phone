@@ -61,3 +61,4 @@
 ###style="word-wrap:break-word;word-break:break-all;"
 ###或
 ###style="word-wrap:break-word;overflow:hidden;"
+##js 实时监听输入框值变化的完美方案：oninput & onpropertychange event.target.value
