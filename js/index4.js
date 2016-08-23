@@ -14,7 +14,7 @@ function show(obj){
     }
 }
 
-$('html').click(function(e){
+$(document).click(function(e){
     //使用e.target 判断事件源 是否在 dropDown或者list上 来处理是否隐藏
     if($(e.target)[0].alt!='other'){
         $('ul').hide();
@@ -186,4 +186,18 @@ function send(obj){
     }
     sendVal='';
     sendParent.style.display='none';
+}
+
+function OnInput(event){
+    var btn =event.target.parentNode.children[(event.target.parentNode.children.length-1)];
+    if(event.target.value!=''){
+        btn.style.color="#ffffff";
+        btn.style.backgroundColor="#5cb85c";
+        btn.style.borderColor="#5cb85c";
+    }
+    else{
+        btn.style.color="#cfcfcf";
+        btn.style.backgroundColor="#eee";
+        btn.style.borderColor="#cfcfcf";
+    }
 }

@@ -327,5 +327,7 @@ header{
     content: ":";
 }
 .commentContent p b{
+    word-wrap:break-word;
+    word-break:break-all;
     font-weight: normal;
 }
