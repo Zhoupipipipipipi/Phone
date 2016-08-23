@@ -175,18 +175,18 @@ header{
 }
 .item-content ul li span{
     float: left;
-    width: 0.9rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.625rem;
     margin-left: 1rem;
 }
 .item-content ul li span img{
     float: left;
-    width: 100%;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.625rem;
     margin-top: 0.3rem;
 }
 .item-content ul li b{
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     margin-left: 0.2rem;
     float: left;
     font-size: 0.625rem;
@@ -262,9 +262,10 @@ header{
     height: 2.4rem;
     width: 100%;
     background-color: #e6e6e6;
-    position: absolute;
-    top: 14.15rem;
+    position: fixed;
+    top:75%;
     z-index: 10;
+    display: none;
 }
 .comment input{
     margin-left: 0.6rem;
@@ -296,4 +297,35 @@ header{
     font-size: 0.65rem;
     color: #cfcfcf;
     outline: none;
+}
+.nine{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nine img{
+    width: 3.9rem;
+    height: 3.9rem;
+    margin-bottom: 0.2rem;
+}
+.commentContent{
+    margin-top: -0.5rem;
+    width: 100%;
+    background-color: #eeeeee;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+.commentContent p{
+    font-size: 0.65rem;
+    margin: 0.5rem 0 0 0.4rem;
+}
+.commentContent p span{
+    color: #576b95;
+}
+.commentContent p span:after{
+    content: ":";
+}
+.commentContent p b{
+    font-weight: normal;
 }

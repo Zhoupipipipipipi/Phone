@@ -12,78 +12,131 @@
     <title></title>
     <link rel="stylesheet" href="css/index4.css">
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
 </head>
 <body>
-    <div class="bigPic" id="bigPic" ontouchstart = "hidePic(this)">
+    <div class="bigPic" id="bigPic" onclick = "hidePic(this)">
         <img src="images/1.jpg">
-    </div>
-    <div class="comment">
-        <input type="text">
-        <img src="image/smile.png">
-        <button type="button">发送</button>
     </div>
     <header>
         <div class="headerLeft">
             <div class="icon">
                 <a href="">
-                    <img src="image/weiJiantou.png">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weiJiantou.png?raw=true">
                 </a>
             </div>
             <span>朋友圈</span>
         </div>
         <div class="headerRight">
-            <img src="image/camera.png">
+            <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/camera.png?raw=true">
         </div>
     </header>
     <div class="headPic">
         <span id="user">周培</span>
         <div class="headImg">
             <div class="whiteBox">
-                <img src="images/3.jpg">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/3.jpg?raw=true">
             </div>
         </div>
     </div>
     <div class="container">
-        <img src="images/5.jpg">
+        <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/5.jpg?raw=true">
     </div>
     <div class="content">
         <div class="item">
             <div class="item-pic">
-                <img src="images/6.jpg">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/6.jpg?raw=true">
             </div>
             <div class="item-content">
                 <h4>Xlin</h4>
                 <p>林李大战</p>
-                <p><img src="images/8.jpg" ontouchstart="showBig(this)" alt="images/8.jpg"></p>
+                <p><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/8.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/8.jpg?raw=true"></p>
                 <div class="item-last">
                     <small>7分钟前</small>
                     <ul>
-                            <li ontouchstart = "zan(this)">
-                            <span><img src="image/weilove.png"></span>
+                        <li onclick = "zan(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weilove.png?raw=true"></span>
                             <b>赞</b>
                         </li>
-                        <li ontouchstart = "comment(this)">
-                            <span><img src="image/weiping.png"></span>
+                        <li onclick="comment(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weiping.png?raw=true"></span>
                             <b>评价</b>
                         </li>
                     </ul>
-                    <div class="other" ontouchstart="show(this)">
-                        <img src="image/other.png" alt="other">
+                    <div class="other" onclick="show(this)">
+                        <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/other.png?raw=true" alt="other">
                     </div>
                 </div>
                 <div class="zan">
                     <div class="triangle"></div>
                     <div class="zanContent">
-                        <span><img src="image/heartBlie.png"></span>
+                        <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/heartBlie.png?raw=true"></span>
+                        <span>XX</span>
+                        <span>莉莉</span>
+                    </div>
+                    <div class="commentContent">
+                        <p><span>周培</span><b>世纪大战</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <input type="text">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/smile.png?raw=true">
+                <button type="button" onclick="send(this)">发送</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/3.jpg?raw=true">
+            </div>
+            <div class="item-content">
+                <h4>Xlin</h4>
+                <p>林李大战</p>
+                <div class="nine">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/1.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/1.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/2.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/2.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/3.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/3.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/4.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/4.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/5.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/5.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/6.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/6.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/7.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/7.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/8.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/8.jpg?raw=true">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/9.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/9.jpg?raw=true">
+                </div>
+                <div class="item-last">
+                    <small>7分钟前</small>
+                    <ul>
+                        <li onclick = "zan(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weilove.png?raw=true"></span>
+                            <b>赞</b>
+                        </li>
+                        <li onclick = "comment(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weiping.png?raw=true"></span>
+                            <b>评价</b>
+                        </li>
+                    </ul>
+                    <div class="other" onclick="show(this)">
+                        <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/other.png?raw=true" alt="other">
+                    </div>
+                </div>
+                <div class="zan">
+                    <div class="triangle"></div>
+                    <div class="zanContent">
+                        <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/heartBlie.png?raw=true"></span>
                         <span>XX</span>
                         <span>周培</span>
                     </div>
                 </div>
             </div>
+            <div class="comment">
+                <input type="text">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/smile.png?raw=true">
+                <button type="button" onclick="send(this)">发送</button>
+            </div>
         </div>
         <div class="item">
             <div class="item-pic">
-                <img src="images/6.jpg">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/6.jpg?raw=true">
             </div>
             <div class="item-content">
                 <h4>Xlin</h4>
@@ -92,82 +145,103 @@
                 <div class="item-last">
                     <small>7分钟前</small>
                     <ul>
-                        <li ontouchstart = "zan(this)">
-                            <span><img src="image/weilove.png"></span>
+                        <li onclick = "zan(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weilove.png?raw=true"></span>
                             <b>赞</b>
                         </li>
-                        <li>
-                            <span><img src="image/weiping.png"></span>
+                        <li onclick = "comment(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weiping.png?raw=true"></span>
                             <b>评价</b>
                         </li>
                     </ul>
-                    <div class="other" ontouchstart="show(this)">
-                        <img src="image/other.png" alt="other">
+                    <div class="other" onclick="show(this)">
+                        <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/other.png?raw=true" alt="other">
                     </div>
                 </div>
                 <div class="zan">
                     <div class="triangle"></div>
                     <div class="zanContent">
-                        <span><img src="image/heartBlie.png"></span>
+                        <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/heartBlie.png?raw=true"></span>
                         <span>XX</span>
                     </div>
                 </div>
             </div>
+            <div class="comment">
+                <input type="text">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/smile.png?raw=true">
+                <button type="button" onclick="send(this)">发送</button>
+            </div>
         </div>
         <div class="item">
             <div class="item-pic">
-                <img src="images/6.jpg">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/6.jpg?raw=true">
             </div>
             <div class="item-content">
                 <h4>Xlin</h4>
                 <p>汽车</p>
                 <p>
-                    <img src="image/1.jpg" ontouchstart="showBig(this)" alt="image/1.jpg">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/1.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/1.jpg?raw=true">
                 </p>
                 <div class="item-last">
                     <small>7分钟前</small>
                     <ul>
-                        <li ontouchstart = "zan(this)">
-                            <span><img src="image/weilove.png"></span>
+                        <li onclick = "zan(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weilove.png?raw=true"></span>
                             <b>赞</b>
                         </li>
-                        <li>
-                            <span><img src="image/weiping.png"></span>
+                        <li onclick = "comment(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weiping.png?raw=true"></span>
                             <b>评价</b>
                         </li>
                     </ul>
-                    <div class="other" ontouchstart="show(this)">
-                        <img src="image/other.png" alt="other">
+                    <div class="other" onclick="show(this)">
+                        <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/other.png?raw=true" alt="other">
                     </div>
                 </div>
+            </div>
+            <div class="comment">
+                <input type="text">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/smile.png?raw=true">
+                <button type="button" onclick="send(this)">发送</button>
             </div>
         </div>
         <div class="item">
             <div class="item-pic">
-                <img src="images/6.jpg">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/images/6.jpg?raw=true">
             </div>
             <div class="item-content">
                 <h4>Xlin</h4>
                 <p>汽车</p>
                 <p>
-                    <img src="image/1.jpg" ontouchstart="showBig(this)" alt="image/1.jpg">
+                    <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/1.jpg?raw=true" onclick="showBig(this)" alt="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/1.jpg?raw=true">
                 </p>
                 <div class="item-last">
                     <small>7分钟前</small>
                     <ul>
-                        <li ontouchstart = "zan(this)">
-                            <span><img src="image/weilove.png"></span>
+                        <li onclick = "zan(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weilove.png?raw=true"></span>
                             <b>赞</b>
                         </li>
-                        <li>
-                            <span><img src="image/weiping.png"></span>
+                        <li onclick = "comment(this)">
+                            <span><img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/weiping.png?raw=true"></span>
                             <b>评价</b>
                         </li>
                     </ul>
-                    <div class="other" ontouchstart="show(this)">
-                        <img src="image/other.png" alt="other">
+                    <div class="other" onclick="show(this)">
+                        <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/other.png?raw=true" alt="other">
                     </div>
                 </div>
+                <div class="zan">
+                    <div class="triangle"></div>
+                    <div class="commentContent">
+                        <p><span>周培</span><b>世纪大战</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <input type="text">
+                <img src="https://github.com/Zhoupipipipipipi/Phone/blob/master/image/smile.png?raw=true">
+                <button type="button" onclick="send(this)">发送</button>
             </div>
         </div>
     </div>
