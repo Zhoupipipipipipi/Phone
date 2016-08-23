@@ -55,5 +55,9 @@
     if($(e.target)[0].alt!='other'){
         $('ul').hide();
     }
-});`
-
+});`  
+##英文字母之间如果没有空格,系统认为这是一个单词,就不会自动换行.汉字就没有这种情况.
+###在<td>中加入
+###style="word-wrap:break-word;word-break:break-all;"
+###或
+###style="word-wrap:break-word;overflow:hidden;"
