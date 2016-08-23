@@ -2,6 +2,7 @@
 ####[1]:http://s.codepen.io/zhoupipipipipipi/debug/oLmLEG  
 ####[2]:http://s.codepen.io/zhoupipipipipipi/debug/QEzrYq  
 ####[3]:http://s.codepen.io/zhoupipipipipipi/debug/zBrBqw  
+####[4]:http://s.codepen.io/zhoupipipipipipi/debug/jAobXZ  
 ##手机端字体响应式 使用rem或em,不要用px  
 ###css实现响应式 
 `@media only screen and (min-width: 401px){
@@ -41,3 +42,18 @@
 ###每个触摸点由包含了如下触摸信息（常用）：  
 ##轮播插件TouchSlide.js  
 ##!import 最高优先级  
+##利用flex布局可以让div垂直居中  
+##js在当前div元素前 插入一个新的div元素  parent.insertBefore(next,prev)  
+##children和childnodes差异  
+###childnodes返回的是指定元素的子元素集合，包括html节点，所有属性，文本。空格也算文本  
+###children 返回的是html元素  
+###firstChild lastChild nextSibing prevSibing返回的是指定元素的子元素集合，包括html节点，所有属性，文本。空格也算文本  
+####http://snandy.iteye.com/blog/547369  
+##js点击其他地方消失  
+`$('html').click(function(e){
+    //使用e.target 判断事件源 是否在 dropDown或者list上 来处理是否隐藏
+    if($(e.target)[0].alt!='other'){
+        $('ul').hide();
+    }
+});`
+
