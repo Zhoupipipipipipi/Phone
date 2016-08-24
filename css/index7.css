@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', '微软雅黑', Arial, Lucida Grande, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    width: 100%;
+    background-color: #910b30;
+    font-size : 40px;
+}
+header{
+    width: 100%;
+}
+.picScroll{
+    width: 100%;
+    height: 10rem;
+}
+.picScroll ul{
+    height: 10rem;
+}
+.picScroll ul li{
+    height: 10rem;
+}
+.picScroll ul li img{
+    width: 100%;
+    height: 10rem;
+}
+.marquee{
+    height: 1.8rem;
+    font-size: 0.75rem;
+    color: #ffffff;
+    background-color: #ce0032;
+    line-height: 1.6rem;
+}
+.countdown{
+    width: 100%;
+    font-size: 0.5rem;
+    height: 1rem;
+    color: #ffffff;
+    background-color: #474747;
+    text-align: center;
+}
+.countdown span{
+    line-height: 1rem;
+}
+.countdown b{
+    display: inline-block;
+    height: 0.8rem;
+    background-color: #cb0a0f;
+    width: 0.9rem;
+}
+.container{
+    width: 100%;
+}
+.item{
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+}
+.item-pic{
+    float: left;
+    display: inline-block;
+    margin: 0.7rem 0.5rem;
+    width: 5.7rem;
+    height: 3.7rem;
+}
+.item-pic img{
+    width: 5.7rem;
+    height: 3.7rem;
+}
+.item-info{
+    margin-top: 0.7rem;
+    display: inline-block;
+}
+.item-info h4{
+    font-size: 0.85rem;
+    color: #5c5b59;
+    margin-bottom: 0.3rem;
+}
+.item-info p{
+    font-size: 0.55rem;
+    color: #983351;
+    margin-bottom: 0.1rem;
+}
+.item span{
+    display: block;
+    font-size: 0.55rem;
+    color: #575755;
+}
+.item span b{
+    font-weight: normal;
+    font-size: 0.55rem;
+    color: #983351;
+}
+.item button{
+    float: right;
+    margin-top: 2rem;
+    margin-right: 0.4rem;
+    width: 5rem;
+    height: 1.76rem;
+    border: #ec013c solid 0.05rem;
+    border-radius: 6rem;
+    background-color: #ec013c;
+}
+.item button span{
+    font-size: 0.8rem;
+    color: #ffffff;
+    float: left;
+}
+.item button img{
+    width: 1.1rem;
+    height: 1.1rem;
+    float: left;
+    margin-left: 0.8rem;
+}
+.item:last-child{
+    margin-bottom: 2.5rem;
+}
+footer{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #73797f;
+    position: fixed;
+    bottom: 0;
+}
+footer ul{
+    width: 100%;
+    height: 2.5rem;
+    display: box; /* OLD - Android 4.4- */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /*OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10*/
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-pack: space-around;
+    /* 12版 */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+footer ul li{
+}
+.footer-pic{
+    margin: 0 auto;
+    width: 1rem;
+    height: 1.2rem;
+}
+.footer-pic img{
+    float: left;
+    width: 1rem;
+    height: 1.2rem;
+}
+footer ul li p{
+    font-size: 0.6rem;
+    color: #ffffff;
+}

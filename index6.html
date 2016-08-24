@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js/mobile-util.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vue.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/index6.css">
+</head>
+<body>
+    <header>
+        <span>微信</span>
+        <div class="header-right">
+            <div class="search">
+                <img src="image/weixinSearch.png">
+            </div>
+            <div class="add" @click="show">
+                <img src="image/weixinAdd.png">
+            </div>
+        </div>
+    </header>
+    <div class="search-tag">
+        <div class="search-tag-header">
+            <div class="search-arrow">
+                <img src="image/arrow.png">
+            </div>
+            <div class="search-right">
+                <button type="button">
+                    <img src="image/MagnifierSearch.png">
+                </button>
+                <input type="text">
+                <div class="search-voice">
+                    <img src="image/voice.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="nav" v-if="showItem">
+        <li v-for="item in nav">
+            <div class="nav-pic">
+                <img src="{{item.img}}">
+            </div>
+            <span>{{item.message}}</span>
+        </li>
+    </ul>
+    <div class="personal">
+        <div class="personal-pic">
+            <img src="images/3.jpg">
+        </div>
+        <div class="personal-new">
+            <b>周培</b>
+            <p>微信号:zhupi0602</p>
+        </div>
+        <div class="personal-QRcode">
+            <img src="image/personalQRcode.png">
+        </div>
+    </div>
+    <ul class="item" v-for="item in items">
+        <li v-for="text in item.information">
+            <img src="{{text.img}}">
+            <span>{{text.message}}</span>
+        </li>
+    </ul>
+    <div class="gray"></div>
+    <footer>
+        <ul>
+            <li v-for="item in footer">
+                <div class="footer-pic"><img src="{{item.img}}"></div>
+                <p>{{item.message}}</p>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        var info = new Vue({
+            el:'body',
+            data:{
+                showItem:false,
+                items:[
+                    {
+                        information:[
+                            {img:'image/weixinPhoto.png',message:'相册'},
+                            {img:'image/weixinCollect.png',message:'收藏'}
+                        ]
+                    },
+                    {
+                        information:[
+                            {img:'image/weixinWallet.png',message:'钱包'},
+                            {img:'image/weixinCard.png',message:'卡包'}
+                        ]
+                    },
+                    {
+                        information:[
+                            {img:'image/expression.png',message:'表情'}
+                        ]
+                    },
+                    {
+                        information:[
+                            {img:'image/install.png',message:'设置'}
+                        ]
+                    }
+                ],
+                footer:[
+                    {img:'image/weixinLogo.png',message:'微信'},
+                    {img:'image/mailList.png',message:'通讯录'},
+                    {img:'image/discovery.png',message:'发现'},
+                    {img:'image/me.png',message:'我'}
+                ],
+                nav:[
+                    {img:'image/groupChat.png',message:'发起群聊'},
+                    {img:'image/addPerson.png',message:'添加朋友'},
+                    {img:'image/scan.png',message:'扫一扫'},
+                    {img:'image/money.png',message:'收付款'},
+                    {img:'image/help.png',message:'帮助与反馈'}
+                ]
+            },
+            methods:{
+                show:function(){
+                    if(this.showItem==false){
+                        this.showItem=true;
+                    }
+                    else{
+                        this.showItem=false;
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

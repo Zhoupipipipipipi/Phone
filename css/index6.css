@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', '微软雅黑', Arial, Lucida Grande, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    background-color: #ebebeb;
+    font-size : 40px;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2.45rem;
+    background-color: #393a3f;
+    display: box; /* OLD - Android 4.4- */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /*OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10*/
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-pack: space-between;
+    /* 12版 */
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+header span{
+    color: #ffffff;
+    font-size: 0.85rem;
+    margin-left: 0.725rem;
+}
+.header-right{
+    overflow: hidden;
+}
+.search{
+    width: 0.95rem;
+    height: 0.95rem;
+    display: inline-block;
+    float: left;
+}
+.add{
+    width: 0.95rem;
+    height: 0.95rem;
+    display: inline-block;
+    margin: 0 1.225rem 0 1.95rem;
+    float: right;
+}
+.search img{
+    width: 0.95rem;
+    height: 0.95rem;
+    float: left;
+}
+.add img{
+    width: 0.95rem;
+    height: 0.95rem;
+    float: left;
+}
+.personal{
+    width: 100%;
+    height: 4rem;
+    margin-top: 3.4rem;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.personal-pic{
+    width: 3.2rem;
+    height: 3.2rem;
+    display: inline-block;
+    float: left;
+    margin-top: 0.375rem;
+    margin-left: 0.7rem;
+    margin-right: 0.85rem;
+}
+.personal-pic img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.personal-new{
+    margin-top: 0.3rem;
+    float: left;
+}
+.personal-new b{
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+.personal-new p{
+    font-size: 0.7rem;
+    color: #999999;
+}
+.personal-QRcode{
+    display: inline-block;
+    float: right;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 1.3rem;
+    vertical-align: middle;
+    margin-right: 1.25rem;
+}
+.personal-QRcode img{
+    float: left;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+.item{
+    width: 100%;
+    list-style: none;
+    background-color: #ffffff;
+    margin-top: 0.95rem;
+}
+.gray{
+    height: 3rem;
+    background-color: #ebebeb;
+}
+.item li{
+    width: 90%;
+    margin: 0 auto;
+    height: 2.4rem;
+    vertical-align: middle;
+    border-bottom: solid 0.05rem #d9d9d9;
+    overflow: hidden;
+}
+.item li:last-child{
+    border-bottom: none;
+}
+.item li img{
+    width: 1.2rem;
+    height: 0.9rem;
+    vertical-align: middle;
+    margin: 0 0.9rem 0 0.3rem;
+}
+.item li span{
+    font-size: 0.75rem;
+    vertical-align: middle;
+    line-height: 2.4rem;
+}
+footer{
+    width: 100%;
+    height: 2.675rem;
+    border-top: 0.05rem solid #d6d6d6;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+footer ul{
+    height: 2.675rem;
+    width: 100%;
+    list-style: none;
+    display: box; /* OLD - Android 4.4- */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /*OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10*/
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-pack: space-around;
+    /* 12版 */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+footer ul li{
+    display: inline-block;
+}
+.footer-pic{
+    width: 1.4rem;
+    height: 1.05rem;
+    text-align: center;
+    margin: 0 auto;
+}
+footer ul li img{
+    float: left;
+    width: 1.2rem;
+    height: 1.05rem;
+}
+footer ul li p{
+    font-size: 0.6rem;
+    color: #a4a4a4;
+    text-align: center;
+}
+.nav{
+    width: 10rem;
+    position: fixed;
+    top: 2.45rem;
+    right: 0.6rem;
+    background-color: #393a3f;
+    list-style: none;
+}
+.nav li{
+    width: 100%;
+    height: 1.65rem;
+    margin-top: 0.7rem;
+    border-bottom: solid 0.05rem #000000;
+}
+.nav li:last-child{
+    border-bottom: none;
+}
+.nav-pic{
+    width: 1.25rem;
+    float: left;
+    margin: 0 0.85rem;
+    height: 1rem;
+}
+.nav-pic img{
+    float: left;
+    display: inline-block;
+    width: 1.25rem;
+    height: 1rem;
+}
+.nav li span{
+    float: left;
+    font-size: 0.75rem;
+    color: #ffffff;
+}

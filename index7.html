@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js/mobile-util.js" type="text/javascript" charset="utf-8"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/index7.css">
+    <script src = "js/TouchSlide.1.1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="picScroll" id="picScroll">
+            <div class="selected-tab clearfix bd">
+                <ul>
+                    <li><img _src='image/5.jpg' ></li>
+                </ul>
+                <ul>
+                    <li><img _src='image/6.jpg' ></li>
+                </ul>
+                <ul>
+                    <li><img _src='image/7.jpg' ></li>
+                </ul>
+            </div>
+        </div>
+        <marquee direction="left" class="marquee">
+            万人空巷抢罗莱！广德罗莱10周年庆典，疯狂进来抢购吧！
+        </marquee>
+        <div class="countdown">
+            <span>活动倒计时:</span>
+            <b id="t_d">21</b>
+            <span>天</span>
+            <b id="t_h">15</b>
+            <span>时</span>
+            <b id="t_m">01</b>
+            <span>分</span>
+            <b id="t_s">15</b>
+            <span>秒</span>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item">
+            <div class="item-pic">
+                <img src="image/zhentou.jpg">
+            </div>
+            <div class="item-info">
+                <h4>枕芯</h4>
+                <p>已有0人砍价</p>
+                <span>原价：79元</span>
+                <span>砍价：<b>1元</b></span>
+            </div>
+            <button type="button">
+                <img src="image/bargin.png">
+                <span>马上砍</span>
+            </button>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="image/zhentou.jpg">
+            </div>
+            <div class="item-info">
+                <h4>枕芯</h4>
+                <p>已有0人砍价</p>
+                <span>原价：79元</span>
+                <span>砍价：<b>1元</b></span>
+            </div>
+            <button type="button">
+                <img src="image/bargin.png">
+                <span>马上砍</span>
+            </button>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="image/zhentou.jpg">
+            </div>
+            <div class="item-info">
+                <h4>枕芯</h4>
+                <p>已有0人砍价</p>
+                <span>原价：79元</span>
+                <span>砍价：<b>1元</b></span>
+            </div>
+            <button type="button">
+                <img src="image/bargin.png">
+                <span>马上砍</span>
+            </button>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="image/zhentou.jpg">
+            </div>
+            <div class="item-info">
+                <h4>枕芯</h4>
+                <p>已有0人砍价</p>
+                <span>原价：79元</span>
+                <span>砍价：<b>1元</b></span>
+            </div>
+            <button type="button">
+                <img src="image/bargin.png">
+                <span>马上砍</span>
+            </button>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="image/zhentou.jpg">
+            </div>
+            <div class="item-info">
+                <h4>枕芯</h4>
+                <p>已有0人砍价</p>
+                <span>原价：79元</span>
+                <span>砍价：<b>1元</b></span>
+            </div>
+            <button type="button">
+                <img src="image/bargin.png">
+                <span>马上砍</span>
+            </button>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="image/zhentou.jpg">
+            </div>
+            <div class="item-info">
+                <h4>枕芯</h4>
+                <p>已有0人砍价</p>
+                <span>原价：79元</span>
+                <span>砍价：<b>1元</b></span>
+            </div>
+            <button type="button">
+                <img src="image/bargin.png">
+                <span>马上砍</span>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <div class="footer-pic">
+                    <img src="image/aboutUs.png">
+                </div>
+                <p>关于我们</p>
+            </li>
+            <li>
+                <div class="footer-pic">
+                    <img src="image/goodsList.png">
+                </div>
+                <p>商品列表</p>
+            </li>
+            <li>
+                <div class="footer-pic">
+                    <img src="image/yellowCar.png">
+                </div>
+                <p>我的商品</p>
+            </li>
+            <li>
+                <div class="footer-pic">
+                    <img src="image/axc.png">
+                </div>
+                <p>砍价攻略</p>
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript">
+        TouchSlide({
+            slideCell:"#picScroll",
+            switchLoad:"_src" //切换加载，真实图片路径为"_src"
+        });
+        function GetRTime(){
+            var EndTime= new Date('2016/09/1 10:00:00'); //截止时间 前端路上 http://www.51xuediannao.com/qd63/
+            var NowTime = new Date();
+            var t =EndTime.getTime() - NowTime.getTime();
+
+            var d=Math.floor(t/1000/60/60/24);
+            var h=Math.floor(t/1000/60/60%24);
+            var m=Math.floor(t/1000/60%60);
+            var s=Math.floor(t/1000%60);
+
+            document.getElementById("t_d").innerHTML = d ;
+            document.getElementById("t_h").innerHTML = h ;
+            document.getElementById("t_m").innerHTML = m ;
+            document.getElementById("t_s").innerHTML = s ;
+        }
+        setInterval(GetRTime,1000);
+    </script>
+</body>
+</html>
