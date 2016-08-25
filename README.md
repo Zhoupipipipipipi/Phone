@@ -5,7 +5,7 @@
 ####[4]:http://s.codepen.io/zhoupipipipipipi/debug/jAobXZ  
 ##手机端字体响应式 使用rem或em,不要用px  
 ###css实现响应式 
-```@media only screen and (min-width: 401px){  
+```@media only screen and (min-width: 401px){    
     html {  
         font-size: 25px !important;  
     }  
