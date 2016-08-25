@@ -156,6 +156,8 @@ footer ul{
     align-items: center;
 }
 footer ul li{
+    width: 25%;
+    text-align: center;
 }
 .footer-pic{
     margin: 0 auto;

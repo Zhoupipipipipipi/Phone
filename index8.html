@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js/mobile-util.js" type="text/javascript" charset="utf-8"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/index8.css">
+    <script src = "js/TouchSlide.1.1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="picScroll" id="picScroll">
+            <div class="selected-tab clearfix bd">
+                <ul>
+                    <li><img _src='image/5.jpg' ></li>
+                </ul>
+                <ul>
+                    <li><img _src='image/6.jpg' ></li>
+                </ul>
+                <ul>
+                    <li><img _src='image/7.jpg' ></li>
+                </ul>
+            </div>
+        </div>
+        <div class="countdown">
+            <span>活动倒计时:</span>
+            <b id="t_d">21</b>
+            <span>天</span>
+            <b id="t_h">15</b>
+            <span>时</span>
+            <b id="t_m">01</b>
+            <span>分</span>
+            <b id="t_s">15</b>
+            <span>秒</span>
+        </div>
+    </header>
+    <div class="container">
+        <h4>亲爱的<b>小韩</b>:</h4>
+        <p>已经有<b>6</b>位亲友帮你砍价了，你当前的价格为<b>6960.40</b>元
+        ，离幸福更近一步了，疯狂的要求亲友帮忙吧！</p>
+        <div class="container-btn">
+            <button type="button">自砍一刀</button>
+            <button type="button">活动规则</button>
+        </div>
+        <table>
+            <tr>
+                <th>亲友团</th>
+                <th>砍掉价格</th>
+                <th>砍后价格</th>
+            </tr>
+            <tr>
+                <td>小韩</td>
+                <td><del>￥8.25</del></td>
+                <td><img src="image/jinbi.png">￥6960.40</td>
+            </tr>
+            <tr>
+                <td>小韩</td>
+                <td><del>￥8.25</del></td>
+                <td><img src="image/jinbi.png">￥6960.40</td>
+            </tr>
+            <tr>
+                <td>小韩</td>
+                <td><del>￥8.25</del></td>
+                <td><img src="image/jinbi.png">￥6960.40</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <button type="button">商品列表</button>
+        <button type="button">分享好友</button>
+    </footer>
+    <script type="text/javascript">
+        TouchSlide({
+            slideCell:"#picScroll",
+            switchLoad:"_src" //切换加载，真实图片路径为"_src"
+        });
+        function GetRTime(){
+            var EndTime= new Date('2016/09/1 10:00:00'); //截止时间 前端路上 http://www.51xuediannao.com/qd63/
+            var NowTime = new Date();
+            var t =EndTime.getTime() - NowTime.getTime();
+
+            var d=Math.floor(t/1000/60/60/24);
+            var h=Math.floor(t/1000/60/60%24);
+            var m=Math.floor(t/1000/60%60);
+            var s=Math.floor(t/1000%60);
+
+            document.getElementById("t_d").innerHTML = d ;
+            document.getElementById("t_h").innerHTML = h ;
+            document.getElementById("t_m").innerHTML = m ;
+            document.getElementById("t_s").innerHTML = s ;
+        }
+        setInterval(GetRTime,1000);
+    </script>
+</body>
+</html>

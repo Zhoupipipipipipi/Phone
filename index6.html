@@ -10,6 +10,7 @@
     <meta name="format-detection" content="telephone=no" />
     <script src="js/mobile-util.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/vue.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <title></title>
     <link rel="stylesheet" href="css/index6.css">
 </head>
@@ -17,7 +18,7 @@
     <header>
         <span>微信</span>
         <div class="header-right">
-            <div class="search">
+            <div class="search" @click="showSearch" onclick="focusInput()">
                 <img src="image/weixinSearch.png">
             </div>
             <div class="add" @click="show">
@@ -25,21 +26,27 @@
             </div>
         </div>
     </header>
-    <div class="search-tag">
+    <div class="search-tag" v-if="searchShow">
         <div class="search-tag-header">
-            <div class="search-arrow">
+            <div class="search-arrow" @click="goOut">
                 <img src="image/arrow.png">
             </div>
             <div class="search-right">
                 <button type="button">
                     <img src="image/MagnifierSearch.png">
                 </button>
-                <input type="text">
+                <input type="text" placeholder="搜索" id="searchText">
                 <div class="search-voice">
                     <img src="image/voice.png">
                 </div>
             </div>
         </div>
+        <ul class="search-tag-content">
+            <li v-for="item in search">
+                <img src="{{item.img}}">
+                <p>{{item.message}}</p>
+            </li>
+        </ul>
     </div>
     <ul class="nav" v-if="showItem">
         <li v-for="item in nav">
@@ -80,6 +87,7 @@
         var info = new Vue({
             el:'body',
             data:{
+                searchShow:false,
                 showItem:false,
                 items:[
                     {
@@ -117,6 +125,11 @@
                     {img:'image/scan.png',message:'扫一扫'},
                     {img:'image/money.png',message:'收付款'},
                     {img:'image/help.png',message:'帮助与反馈'}
+                ],
+                search:[
+                    {img:'image/cicleOfFirend.png',message:'朋友圈'},
+                    {img:'image/article.png',message:'文章'},
+                    {img:'image/publicNumber.png',message:'公众号'}
                 ]
             },
             methods:{
@@ -127,9 +140,16 @@
                     else{
                         this.showItem=false;
                     }
+                },
+                showSearch:function(){
+                    this.searchShow=true;
+
+                },
+                goOut:function(){
+                    this.searchShow=false;
                 }
             }
-        })
+        });
     </script>
 </body>
 </html>

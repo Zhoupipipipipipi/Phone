@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', '微软雅黑', Arial, Lucida Grande, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    width: 100%;
+    font-size : 40px;
+}
+header{
+    width: 100%;
+    position: relative;
+}
+.picScroll{
+    width: 100%;
+    height: 10rem;
+}
+.picScroll ul{
+    height: 10rem;
+}
+.picScroll ul li{
+    height: 10rem;
+}
+.picScroll ul li img{
+    width: 100%;
+    height: 10rem;
+}
+.countdown{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    color: #ffffff;
+    background-color: #474747;
+    opacity: 0.8;
+    text-align: center;
+}
+.countdown span{
+    line-height: 1.5rem;
+}
+.countdown b{
+    display: inline-block;
+    height: 1.1rem;
+    background-color: #cb0a0f;
+    width: 1.1rem;
+}
+.container{
+    width: 100%;
+}
+.container h4{
+    font-size: 0.85rem;
+    color: #232323;
+    font-weight: normal;
+    margin: 0.5rem 1rem;
+}
+.container h4 b{
+    color: #e90230;
+    font-weight: normal;
+}
+.container p{
+    font-size: 0.7rem;
+    margin: 0 1rem;
+    line-height: 1.15rem;
+}
+.container p b{
+    color: #e90230;
+    font-weight: normal;
+}
+.container-btn{
+    width: 100%;
+    display: box; /* OLD - Android 4.4- */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /*OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10*/
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-pack: space-around;
+    /* 12版 */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    margin-top: 0.75rem;
+}
+.container-btn button{
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    border: solid 0.05rem #c20a12;
+    background-color: #c20a12;
+    color: #ffffff;
+    font-size: 0.85rem;
+}
+.container table{
+    width: 90%;
+    font-size: 0.65rem;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0.5rem auto 2.5rem;
+}
+.container table tr{
+    height: 1.5rem;
+    width: 100%;
+}
+.container table th{
+    width: 33.3%;
+    color: #ffffff;
+    font-weight: normal;
+    background-color: #ed1721;
+}
+.container table td{
+    color: #9a9a9a;
+}
+.container table del{
+    color: #c0c0c0;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #e4b895;
+    display: box; /* OLD - Android 4.4- */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /*OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10*/
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-pack: space-around;
+    /* 12版 */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+footer button{
+    width: 5rem;
+    height: 1.5rem;
+    color: #ffffff;
+    font-size: 0.65rem;
+    background-color: #e30034;
+    border: solid 0.05rem #e30034;
+    border-radius: 0.2rem;
+}
