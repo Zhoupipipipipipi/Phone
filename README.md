@@ -61,4 +61,11 @@
 #####style="word-wrap:break-word;word-break:break-all;"
 #####或
 #####style="word-wrap:break-word;overflow:hidden;"
-####js 实时监听输入框值变化的完美方案：oninput & onpropertychange event.target.value
+####js 实时监听输入框值变化的完美方案：oninput & onpropertychange event.target.value  
+####html滚动文字  
+`<marquee></marquee>标签的direction属性用于设置内容滚动方向，属性值有left、right、up、down，分别代表向左、向右、向上、向下，例如以下代码：  
+<marquee direction="left">做人要厚道</marquee>   
+<marquee direction="right">做人要厚道</marquee>   
+<marquee direction="up">做人要厚道</marquee>   
+<marquee direction="down">做人要厚道</marquee> `  
+
