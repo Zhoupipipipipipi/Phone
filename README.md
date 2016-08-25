@@ -5,31 +5,31 @@
 ####[4]:http://s.codepen.io/zhoupipipipipipi/debug/jAobXZ  
 ##手机端字体响应式 使用rem或em,不要用px  
 ###css实现响应式 
-`@media only screen and (min-width: 401px){
-    html {
-        font-size: 25px !important;
-    }
-}
-@media only screen and (min-width: 428px){
-    html {
-        font-size: 26.75px !important;
-    }
-}
-@media only screen and (min-width: 481px){
-    html {
-        font-size: 30px !important;
-    }
-}
-@media only screen and (min-width: 569px){
-    html {
-        font-size: 35px !important;
-    }
-}
-@media only screen and (min-width: 641px){
-    html {
-        font-size: 40px !important;
-    }
-}`  
+```@media only screen and (min-width: 401px){  
+    html {  
+        font-size: 25px !important;  
+    }  
+}  
+@media only screen and (min-width: 428px){  
+    html {  
+        font-size: 26.75px !important;  
+    }  
+}  
+@media only screen and (min-width: 481px){  
+    html {  
+        font-size: 30px !important;  
+    }  
+}  
+@media only screen and (min-width: 569px){  
+    html {  
+        font-size: 35px !important;  
+    }  
+}  
+@media only screen and (min-width: 641px){  
+    html {  
+        font-size: 40px !important;  
+    }  
+}```    
 ###js实现响应式(但是还没有试过）[链接]:http://www.cnblogs.com/qingmingsang/articles/5463938.html
 ##手机端触屏事件  
 ###touchstart：触摸开始的时候触发  
