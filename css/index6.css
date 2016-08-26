@@ -338,3 +338,72 @@ footer ul li p{
     font-size: 0.7rem;
     color: #555555;
 }
+.QRcode{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100rem;
+    z-index: 15;
+}
+.QRcode-box{
+    width: 14rem;
+    background-color: #ffffff;
+    margin: 3.75rem auto;
+    overflow: hidden;
+}
+.QRcode-info{
+    width: 11.2rem;
+    margin: 2rem auto 0;
+    overflow: hidden;
+}
+.QRcode-pic{
+    width: 3.2rem;
+    height: 3.2rem;
+    float: left;
+}
+.QRcode-pic img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.QRcode-right{
+    margin-top: 0.6rem;
+    width: 7.5rem;
+    display: inline-block;
+    float: right;
+}
+.QRcode-name{
+    width: 100%;
+    overflow: hidden;
+}
+.QRcode-name span{
+    float: left;
+    font-size: 0.75rem;
+}
+.QRcode-name img{
+    float: left;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
+    width: 0.75rem;
+    height: 0.75rem;
+}
+.QRcode-right p{
+    font-size: 0.65rem;
+    color: #999999;
+}
+.QRcode-big{
+    width: 11.2rem;
+    height: 11.2rem;
+    margin: 0.75rem auto;
+}
+.QRcode-big img{
+    width: 11.2rem;
+    height: 11.2rem;
+}
+.addWeixin{
+    font-size: 0.6rem;
+    width: 11.2rem;
+    margin: 0 auto 2.5rem;
+    color: #999999;
+    text-align: center;
+}

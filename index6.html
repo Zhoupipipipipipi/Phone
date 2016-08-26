@@ -48,6 +48,26 @@
             </li>
         </ul>
     </div>
+    <div class="QRcode" v-if="showQRcode" @click="hideQRcode">
+        <div class="QRcode-box">
+            <div class="QRcode-info">
+                <div class="QRcode-pic">
+                    <img src="image/heartPic.png">
+                </div>
+                <div class="QRcode-right">
+                    <div class="QRcode-name">
+                        <span>周培</span>
+                        <img src="image/bluePerson.png">
+                    </div>
+                    <p>广东 潮州</p>
+                </div>
+            </div>
+            <div class="QRcode-big">
+                <img src="image/QRcodePic.png">
+            </div>
+            <p class="addWeixin">扫一扫上面的二维码图案，加我微信</p>
+        </div>
+    </div>
     <ul class="nav" v-if="showItem">
         <li v-for="item in nav">
             <div class="nav-pic">
@@ -56,7 +76,7 @@
             <span>{{item.message}}</span>
         </li>
     </ul>
-    <div class="personal">
+    <div class="personal" @click="hideNav">
         <div class="personal-pic">
             <img src="images/3.jpg">
         </div>
@@ -64,11 +84,11 @@
             <b>周培</b>
             <p>微信号:zhupi0602</p>
         </div>
-        <div class="personal-QRcode">
+        <div class="personal-QRcode" @click="setQRcode">
             <img src="image/personalQRcode.png">
         </div>
     </div>
-    <ul class="item" v-for="item in items">
+    <ul class="item" v-for="item in items" @click="hideNav">
         <li v-for="text in item.information">
             <img src="{{text.img}}">
             <span>{{text.message}}</span>
@@ -87,6 +107,7 @@
         var info = new Vue({
             el:'body',
             data:{
+                showQRcode:false,
                 searchShow:false,
                 showItem:false,
                 items:[
@@ -147,6 +168,15 @@
                 },
                 goOut:function(){
                     this.searchShow=false;
+                },
+                setQRcode:function(){
+                    this.showQRcode=true;
+                },
+                hideQRcode:function(){
+                    this.showQRcode=false;
+                },
+                hideNav:function(){
+                    this.showItem=false;
                 }
             }
         });
