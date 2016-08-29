@@ -1,0 +1,129 @@
+@import "master.scss";
+
+$gray : #292c2d;
+$font :#ffffff;
+
+body{
+  height: 100%;
+  background-color: #000;
+  color: $font;
+}
+header{
+  width: 100%;
+  height: 2.5rem;
+  position: fixed;
+  top: 0;
+  background-color: $gray;
+  color: $font;
+  font-size: 0.8rem;
+  .header-left{
+    margin-left: 0.85rem;
+    margin-top: 0.85rem;
+    display: inline-block;
+    a{
+      float: left;
+      padding-right: 0.75rem;
+      border-right: solid 0.05rem #000000;
+      display: inline-block;
+      width: 0.825rem;
+      height: 0.8rem;
+      img{
+        float: left;
+        width: 0.8rem;
+        height: 0.8rem;
+      }
+    }
+    span{
+      margin-top: -0.2rem;
+      float: left;
+      display: inline-block;
+      margin-left: 0.6rem;
+    }
+  }
+  .header-right{
+    margin-top: 0.85rem;
+    margin-right: 1.1rem;
+    float: right;
+    width: 0.2rem;
+    height: 0.9rem;
+    img{
+      width: 0.2rem;
+      height: 0.9rem;
+    }
+  }
+}
+
+.content{
+  position: fixed;
+  top: 3rem;
+}
+
+.title{
+  position: fixed;
+  bottom: 2.6rem;
+  margin-left: 0.4rem;
+  p{
+    color: $font;
+    font-size: 0.7rem;
+  }
+}
+
+footer{
+  height: 2.5rem;
+  width: 100%;
+  background-color: $gray;
+  position: fixed;
+  bottom: 0;
+}
+.footerLeft{
+  display: inline-block;
+  height: 100%;
+}
+.footerLeft ul{
+  display: inline-block;
+  list-style: none;
+  height: inherit;
+}
+.footerLeft ul li{
+  margin-top: 0.75rem;
+  display: inline-block;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.footerPic{
+  float: left;
+  height: 0.9rem;
+  width: 0.9rem;
+  display: inline-block;
+}
+.footerPic img{
+  float: left;
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.footerLeft ul li span{
+  font-size: 0.8rem;
+  margin-left: 0.6rem;
+  float: right;
+  line-height: 0.8rem;
+}
+.footerRight{
+  display: inline-block;
+  float: right;
+  border-left: solid 1px #000000;
+  height: 1.1rem;
+  padding-left: 0.6rem;
+  margin-top: 0.75rem;
+}
+.footerRight li{
+  display: inline-block;
+  height: 0.9rem;
+  width: 0.9rem;
+  margin-right: 0.6rem;
+  float: left;
+}
+.footerRight li img{
+  float: left;
+  height: 0.9rem;
+  width: 0.9rem;
+}
