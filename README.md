@@ -3,6 +3,8 @@
 #####[2]:http://s.codepen.io/zhoupipipipipipi/debug/QEzrYq  
 #####[3]:http://s.codepen.io/zhoupipipipipipi/debug/zBrBqw  
 #####[4]:http://s.codepen.io/zhoupipipipipipi/debug/jAobXZ  
+#####[5]:http://s.codepen.io/zhoupipipipipipi/debug/VjJRRv  
+#####[6]:http://s.codepen.io/zhoupipipipipipi/debug/YGzQrr#content  
 ####手机端字体响应式 使用rem或em,不要用px  
 #####css实现响应式 
 ```@media only screen and (min-width: 401px){    
