@@ -13,6 +13,9 @@ body {
   width: 100%;
   font-size: 40px; }
 
+input, button {
+  outline: none; }
+
 body {
   height: 100%;
   background-color: #000;

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js/mobile-util.js" type="text/javascript" charset="utf-8"></script>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/mobile-select-area.css">
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+    <script type="text/javascript" src="js/mobile-select-area.js"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/yxMobileSlider.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <link rel="stylesheet" href="css/index12.css">
+</head>
+<body>
+    <header id="header">
+        <div class="slider">
+            <ul>
+                <li><a href=""><img src="images/vegetable11.jpg"></a></li>
+                <li><a href=""><img src="images/vegetable12.jpg"></a></li>
+                <li><a href=""><img src="images/vegetable13.jpg"></a></li>
+                <li><a href=""><img src="images/vegetable14.jpg"></a></li>
+                <li><a href=""><img src="images/vegetable5.jpg"></a></li>
+            </ul>
+        </div>
+        <div class="header-back">
+            <img src="image/back.png">
+        </div>
+        <div class="header-share" onclick="showShare()">
+            <img src="image/grayShare.png" id="shareImg">
+        </div>
+        <div class="header-details" onclick="showContent()">
+            <a href="#content">
+                <img src="image/details.png">
+            </a>
+        </div>
+    </header>
+    <div class="title">
+        <div class="header-price">
+            <h1><b>￥</b>328</h1>
+            <del>￥500</del>
+            <small>包税</small>
+        </div>
+        <div class="title-content">
+            <h2>【预售8.28发货】奇华 八星聚宝礼盒月饼 明星伴手礼 9个/盒 665克</h2>
+            <p>将7种不同口味的精华，全部融入于一盒之中，让每一种美味都不错过。
+                将7种不同口味的精华，全部融入于一盒之中，让每一种美味都不错过。
+                将7种不同口味的精华，全部融入于一盒之中，让每一种美味都不错过。
+                将7种不同口味的精华，全部融入于一盒之中，让每一种美味都不错过。</p>
+            <div class="title-brand">
+                <div class="title-brand-pic">
+                    <img src="image/brand.png">
+                </div>
+                <span>中国香港品牌</span>
+            </div>
+        </div>
+    </div>
+    <div class="msg">
+        <div class="msg-content">
+            <ul class="msg-list">
+                <li class="msg-list-item" onclick="showPromote()">
+                    <span>促销:</span>
+                    <b>[凑单]满399减70，满599减130</b>
+                    <div class="msg-right">
+                        <img src="image/msgRight.png">
+                    </div>
+                </li>
+                <li class="msg-list-item">
+                    <span>配送:</span>
+                    <div class="msg-address">
+                        湖州 至 <img src="image/address.png"> <input type="text" id="txt_area2" value="上海黄浦区"> 本地区免运费
+                    </div>
+                    <div class="msg-right">
+                        <img src="image/msgRight.png">
+                    </div>
+                </li>
+                <li class="msg-list-item" onclick="showDescription()">
+                    <span>说明:</span>
+                    <ul class="msg-explain">
+                        <li><small>·</small>商品包税</li>
+                        <li><small>·</small>无忧退货</li>
+                        <li><small>·</small>商家湖州1号仓发货</li>
+                    </ul>
+                    <div class="msg-right">
+                        <img src="image/msgRight.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="evaluate" onclick="showSubmenu()">
+        <div class="evaluate-content">
+            <span>其他小伙伴们说(0)</span>
+            <div class="msg-right">
+                <img src="image/msgRight.png">
+            </div>
+        </div>
+        <div class="evaluate-container" id="evaluate-container">
+            <div class="selected-tab clearfix bd">
+                <ul>
+                    <li>
+                        <div class="evaluate-container-pic">
+                            <img src="images/vegetable11.jpg">
+                        </div>
+                        <div class="evaluate-info">
+                            <div class="evaluate-info-pic">
+                                <img src="images/1.jpg">
+                            </div>
+                            <span>新***发</span>
+                        </div>
+                        <p>包包很快就收到了包包很快就收到了包包很快就收到了</p>
+                    </li>
+                    <li>
+                        <div class="evaluate-container-pic">
+                            <img src="images/vegetable11.jpg">
+                        </div>
+                        <div class="evaluate-info">
+                            <div class="evaluate-info-pic">
+                                <img src="images/1.jpg">
+                            </div>
+                            <span>新***发</span>
+                        </div>
+                        <p>包包很快就收到了包包很快就收到了包包很快就收到了</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="evaluate-container-pic">
+                            <img src="images/vegetable11.jpg">
+                        </div>
+                        <div class="evaluate-info">
+                            <div class="evaluate-info-pic">
+                                <img src="images/1.jpg">
+                            </div>
+                            <span>新***发</span>
+                        </div>
+                        <p>包包很快就收到了包包很快就收到了包包很快很快就收到了包包很快很快就收到了包包很快
+                            很快就收到了包包很快很快就收到了包包很快就收到了</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="submenu" id="submenu">
+        <div class="submenu-nav">
+            小伙伴们说
+            <div class="nav-back" onclick="hidSubmenu()">
+                <img src="image/navBack.png">
+            </div>
+        </div>
+        <div class="submenu-title">
+            <img src="images/vegetable11.jpg">
+            <span>kate spade 凯特·丝蓓 女士手提包</span>
+            <b>￥1549</b>
+        </div>
+        <div class="submenu-evaluate">
+            <div class="submenu-evaluate-top">
+                <b>小伙伴评价</b>
+                <ul class="star-five">
+                    <li><img src="image/fivestar.png"></li>
+                    <li><img src="image/fivestar.png"></li>
+                    <li><img src="image/fivestar.png"></li>
+                    <li><img src="image/fivestar.png"></li>
+                    <li><img src="image/fivestar.png"></li>
+                </ul>
+                <small>100.0%好评</small>
+            </div>
+            <ul class="submenu-evaluate-choose" id="submenu-evaluate-choose">
+                <li class="submenu-choose" onclick="chooseEvaluate(this)">全部(23)</li>
+                <li onclick="chooseEvaluate(this)">有图(23)</li>
+                <li onclick="chooseEvaluate(this)">有追评(23)</li>
+            </ul>
+        </div>
+        <div class="submenu-marvellous">
+            精彩评价
+        </div>
+        <div class="submenu-evaluate-content">
+            <div class="submenu-item">
+                <div class="submenu-item-title">
+                    <div class="submenu-item-head">
+                        <img src="images/3.jpg">
+                    </div>
+                    <div class="submenu-item-name">
+                        <p>新****发</p>
+                        <span>加入网易考拉海购48天</span>
+                    </div>
+                    <div class="submenu-item-date">
+                        2016-08-04
+                    </div>
+                </div>
+                <p class="submenu-evaluate-word">
+                    包包很快就收到进了包包很快就收到进了包包很快就收到进了包包很快就收到进了
+                </p>
+                <div class="submenu-style">
+                    颜色:酒红色
+                </div>
+                <div class="submenu-chase">
+                    <small>11天后追加评价</small>
+                    <p>很好用！！！</p>
+                </div>
+                <div class="submenu-zan">
+                    <div class="submenu-zan-pic" onclick="zan(this)">
+                        <img src="image/lagouzan.png" alt="false">
+                        <span>赞</span>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu-item">
+                <div class="submenu-item-title">
+                    <div class="submenu-item-head">
+                        <img src="images/3.jpg">
+                    </div>
+                    <div class="submenu-item-name">
+                        <p>新****发</p>
+                        <span>加入网易考拉海购48天</span>
+                    </div>
+                    <div class="submenu-item-date">
+                        2016-08-04
+                    </div>
+                </div>
+                <p class="submenu-evaluate-word">
+                    包包很快就收到进了包包很快就收到进了包包很快就收到进了包包很快就收到进了
+                    包包很快就收到进了包包很快就收到进了包包很快就收到进了包包很快就收到进了包包很快就收到进了
+                    包包很快就收到进了包包很快就收到进了
+                </p>
+                <div class="submenu-style">
+                    颜色:酒红色
+                </div>
+                <div class="submenu-evaluate-pic" id="submenu-evaluate-pic">
+                    <ul>
+                        <li>
+                            <img src="images/vegetable11.jpg">
+                        </li>
+                        <li>
+                            <img src="images/vegetable11.jpg">
+                        </li>
+                        <li>
+                            <img src="images/vegetable11.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <div class="submenu-zan">
+                    <div class="submenu-zan-pic" onclick="zan(this)">
+                        <img src="image/lagouzan.png" alt="false">
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu-item">
+                <div class="submenu-item-title">
+                    <div class="submenu-item-head">
+                        <img src="images/3.jpg">
+                    </div>
+                    <div class="submenu-item-name">
+                        <p>新****发</p>
+                        <span>加入网易考拉海购48天</span>
+                    </div>
+                    <div class="submenu-item-date">
+                        2016-08-04
+                    </div>
+                </div>
+                <p class="submenu-evaluate-word">
+                    包包很快就收到进了包包很快就收到进了包包很快就收到进了包包很快就收到进了
+                    包包很快就收到进了包包很快就收到进了包包很快就收到进了包包很快就收到进了包包很快就收到进了
+                    包包很快就收到进了包包很快就收到进了
+                </p>
+                <div class="submenu-style">
+                    颜色:酒红色
+                </div>
+                <div class="submenu-zan">
+                    <div class="submenu-zan-pic" onclick="zan(this)">
+                        <img src="image/lagouzan.png" alt="false">
+                        <span>赞</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="column-brand">
+            <div class="column-shop-pic">
+                <a href="">
+                    <img src="image/shopPic.jpg">
+                </a>
+            </div>
+            <div class="column-shop-center">
+                <p>keewah 奇华</p>
+                <small>在售商品<b>3</b>件</small>
+            </div>
+            <button type="button">
+                <img src="image/inBrand.png">
+                <span>进入品牌</span>
+            </button>
+        </div>
+        <div class="column-introduce">
+            奇华月饼是想干最为著名和历史悠久的月饼品牌，自1938年创建奇华饼家
+            奇华月饼是想干最为著名和历史悠久的月饼品牌，自1938年创建奇华饼家
+            奇华月饼是想干最为著名和历史悠久的月饼品牌，自1938年创建奇华饼家
+        </div>
+        <div class="column-goods" id="column-goods">
+            <div class="selected-tab clearfix bd">
+                <ul>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a  href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="column-recommend">
+            小考拉推荐
+        </div>
+        <div class="column-goods" id="column-recommend-goods">
+            <div class="selected-tab clearfix bd">
+                <ul>
+                    <li>
+                        <div class="column-tag">热销</div>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-tag">新品</div>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a  href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="column-recommend">相似品牌</div>
+        <div class="column-similar-brand" id="column-similar-brand">
+            <div class="selected-tab clearfix bd column-similar-item">
+                <ul>
+                    <li class="column-similar-title">
+                        <a href="">
+                            <div class="column-similar-pic">
+                                <img src="images/shop1.jpg">
+                            </div>
+                            <div class="column-similar-name">
+                                <h3>美心</h3>
+                                <h4><img src="image/brand.png">HK 中国香港</h4>
+                            </div>
+                            <div class="column-similar-href">
+                                <img src="image/msgRight.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-tag">新品</div>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="column-similar-title">
+                        <a href="">
+                            <div class="column-similar-pic">
+                                <img src="images/shop1.jpg">
+                            </div>
+                            <div class="column-similar-name">
+                                <h3>美心</h3>
+                                <h4><img src="image/brand.png">HK 中国香港</h4>
+                            </div>
+                            <div class="column-similar-href">
+                                <img src="image/msgRight.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a  href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                    <li>
+                        <div class="column-goods-pic">
+                            <a href="">
+                                <img src="images/vegetable11.jpg">
+                            </a>
+                        </div>
+                        <a href="">【预售8.28发货】奇华熊猫曲奇饼干 礼盒装...</a>
+                        <span>￥89.9<del>￥100</del></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <div class="share" id="share">
+        <div class="share-content">
+            <div class="share-title">
+                分享
+                <div class="share-close">
+                    <img src="image/cha.jpg">
+                </div>
+            </div>
+            <ul class="share-item">
+                <li>
+                    <a href="">
+                        <span><img src="image/lagouWeixin.png"></span>
+                        <p>微信好友</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="image/lagouPengyouquan.jpg"></span>
+                        <p>微信朋友圈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <span><img src="image/lagouWeibo.jpg"></span>
+                    <p>新浪微博</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="image/lagouyixin.jpg"></span>
+                        <p>易信好友</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="image/lagouyipeng.jpg"></span>
+                        <p>易信朋友圈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="image/lagoulink.jpg"></span>
+                        <p>复制链接</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav" id="nav">
+        商品详情
+        <div class="nav-back">
+            <img src="image/navBack.png">
+        </div>
+        <div class="nav-share" onclick="showShare()">
+            <img src="image/navShare.png" id="navImg">
+        </div>
+    </div>
+    <div class="tab" id="promote">
+        <div class="tab-title">
+            促销活动
+            <div class="tab-close" onclick="closeTab()">
+                <img src="image/cha.jpg">
+            </div>
+        </div>
+        <ul>
+            <li>
+                <p><b>[凑单]</b>满399减70，满599减130</p>
+                <div class="tab-link">
+                    <img src="image/msgRight.png">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="tab" id="description">
+        <div class="tab-title">
+            商品说明
+            <div class="tab-close" onclick="closeTab()">
+                <img src="image/cha.jpg">
+            </div>
+        </div>
+        <ul class="tab-description">
+            <li>
+                <h4>◇ 商品包税</h4>
+                <span>本商品包税，无需额外交税</span>
+            </li>
+            <li>
+                <h4>◇ 无忧退货</h4>
+                <span>收到商品之日起7天(含)内如有商品质量问题或溢漏损失缺发等可申请售后进行退货</span>
+            </li>
+            <li>
+                <h4>◇ 商家湖州1号仓发货</h4>
+                <span>商家湖州1号仓为网易考拉海购入驻商家，该商品由入驻商家发货。</span>
+            </li>
+        </ul>
+    </div>
+    <div class="tab" id="buy" style="height: auto">
+        <div class="tab-price-title">
+            <div class="tab-price">
+                <h5><b>￥328</b>(库存充足)</h5>
+                <p><img src="image/gift.png">再购71元立享【满399元减70元】</p>
+            </div>
+            <div class="tab-close" onclick="closeTab()">
+                <img src="image/cha.jpg">
+            </div>
+        </div>
+        <hr>
+        <div class="tab-item tab-style">
+            <span>颜色</span>
+            <div class="tab-style-right" onclick="showChoose()">
+                <small id="selected">蓝色</small>
+                <img src="image/buydown.png">
+            </div>
+        </div>
+        <hr>
+        <div class="tab-item tab-num">
+            <span>数量</span>
+            <div class="tab-num-right">
+                <button type="button" class="btn-left" onclick="reduceNum()">-</button>
+                <input type="text" value="1" id="num">
+                <button type="button" class="btn-right" onclick="addNum()">+</button>
+            </div>
+        </div>
+        <hr>
+        <div class="tab-item tab-tax">
+            <span>商品税费</span>
+            <div class="tab-tax-right">
+                <small>￥0.0</small>
+                <img src="image/buydown.png">
+            </div>
+        </div>
+        <hr>
+        <button type="button" class="btn-sure">确认购买</button>
+    </div>
+    <div class="tab" id="choose" style="height:auto">
+        <div class="tab-title">
+            颜色
+            <div class="tab-title-up" onclick="showBuy()">
+                <img src="image/lagouUp.png">
+            </div>
+        </div>
+        <div class="tab-goods">
+            <div class="tab-goods-pic">
+                <img src="images/vegetable11.jpg">
+            </div>
+            <div class="tab-goods-price">
+                <h5><b>￥300</b>(库存充足)</h5>
+                <p id="colorType">请选择颜色</p>
+            </div>
+        </div>
+        <ul class="tab-goods-choose" id="colorStyle">
+            <li class="choose-exist" onclick="chooseGoods(this)">黑色</li>
+            <li class="choose-no-exist" onclick="chooseGoods(this)">蓝色</li>
+            <li class="choose-exist" onclick="chooseGoods(this)">米白色</li>
+            <li class="choose-exist" onclick="chooseGoods(this)">浅蓝色</li>
+            <li class="choose-no-exist" onclick="chooseGoods(this)">橘色</li>
+            <li class="choose-no-exist" onclick="chooseGoods(this)">粉色</li>
+        </ul>
+        <button class="btn-tab-goods" id="btnGoods" onclick="sureChoose(this)">确认</button>
+    </div>
+    <div class="tip" id="tip">
+        请选择颜色
+    </div>
+    <div class="column">
+        <a class="column-up" href="#content">
+            <img src="image/lagouUp.png">
+            上拉查看图文详情
+        </a>
+    </div>
+    <div class="content" id="content">
+        <ul id="picAndQue">
+            <li class="content-choose" onclick="changePic(this)">图文详情</li>
+            <li onclick="changeQuestion(this)">小考拉答疑</li>
+        </ul>
+        <div class="content-picture">
+            <img src="images/vegetable12.jpg">
+            <img src="images/vegetable12.jpg">
+            <img src="images/vegetable12.jpg">
+        </div>
+        <div class="content-question">
+            <h5>常见疑问</h5>
+            <ol>
+                <li>为何商品有ongoing国内保税局发出？有从海外仓库直接发出？
+                    <p>保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                    </p>
+                </li>
+                <li>为何商品有ongoing国内保税局发出？有从海外仓库直接发出？
+                    <p>保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                    </p>
+                </li>
+                <li>为何商品有ongoing国内保税局发出？有从海外仓库直接发出？
+                    <p>保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                        保税局发货，是网易与政府部门合作的新一代海淘模式：网易从海外场地直接采购商品。
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-item" onclick="collect(this)">
+            <img src="image/detailsCollect.png" alt="1">
+            <span>收藏</span>
+        </div>
+        <div class="footer-item circle-parent">
+            <img src="image/detailsCar.png">
+            <span>购物车</span>
+            <div class="circle-num" id="carNum">2</div>
+        </div>
+        <button type="button" class="btn-pick" onclick="addCar()">加入购物车</button>
+        <button type="button" class="btn-red" onclick="showChoose()">立即购买</button>
+    </footer>
+    <script src="js/index12.js"></script>
+    <script>
+        TouchSlide({
+            slideCell:"#column-goods",
+            switchLoad:"_src" //切换加载，真实图片路径为"_src"
+        });
+        TouchSlide({
+            slideCell:"#column-recommend-goods",
+            switchLoad:"_src" //切换加载，真实图片路径为"_src"
+        });
+        TouchSlide({
+            slideCell:"#column-similar-brand",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            effect:"leftLoop",
+            autoPage:true, //自动分页
+            switchLoad:"_src" //切换加载，真实图片路径为"_src"
+        });
+        TouchSlide({
+            slideCell:"#evaluate-container",
+            switchLoad:"_src" //切换加载，真实图片路径为"_src"
+        });
+        $(".slider").yxMobileSlider({width:'100%',height:'17.65rem',during:3000})
+    </script>
+</body>
+</html>
